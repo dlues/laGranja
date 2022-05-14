@@ -32,14 +32,29 @@ nav {
   overflow: hidden;
   padding: 10px;
 }
+
+
 #div-logo img {
+
   width: 260px;
   height: auto;
+
 }
 
+
+#div-logo img:hover 
+{
+  transform: rotateY(360deg) scale(1.2);;
+  transform-style: preserve-3d;
+  transition:all 3s ease-in-out;
+
+
+}
+    
 nav ul li a:hover {
   color: #000;
   background: #fff;
+  transition:all 1.2s ease-in-out;
 }
 
 #titulos {
@@ -94,14 +109,7 @@ footer h3 {
   grid-area: pie;
 }
 
-i {
-  font-size: 48px;
-  color: white;
-  padding: 0 5px;
-}
-i:hover {
-  color: red;
-}
+
 
 #form-contacto {
   text-align: center;
@@ -166,6 +174,50 @@ i:hover {
   background: #fff;
 }
 
+i {
+  font-size: 48px;
+  color: white;
+  padding: 0 5px;
+}
+i:hover {
+  color: red;
+}
+
+
+
+
+  h2 {
+    animation: bounce 10s alternate infinite ease-in-out;
+      @keyframes bounce {
+        0% {
+          transform: translateY(-10%);
+        }
+        10% {
+          transform: translateY(0);
+        }
+      
+      }
+      
+    
+    }
+  @keyframes bounce {
+    0% {
+      transform: translateX(10%);
+    }
+    30% {
+      transform: translateX(-10%);
+    }
+  
+  
+
+}
+
+
+
+
+
+
+
 @media (max-width: 1050px) {
   .parrafodestacado {
     padding: 20px;
@@ -185,6 +237,9 @@ i:hover {
     text-align: center;
   }
 
+
+ 
+    
   .principal {
     grid-template-areas:
       "encabe2"
@@ -208,12 +263,12 @@ i:hover {
     text-align: center;
   }
 
-.blog,
-.blogIzq {
+.blog, .blogIzq {
 flex-direction: column;
 }
 
 .blog-mensecc {
   flex-direction: column;
 
+}
 }
