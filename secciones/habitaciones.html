@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,88 +8,108 @@
       src="https://kit.fontawesome.com/95dfa79d8d.js"
       crossorigin="anonymous"
     ></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="../estilos/estilo.css" />
-    <title>
-      LA Granja - Habitaciones  
-    </title>
-
-
-
-</head>
-<body>
+    <title>LA Granja - Habitaciones</title>
+  </head>
+  <body>
     <header>
-        <!-- barra de Navegacion -->
-        <nav>
-          <div id="div-logo">
-            <img src="../img/logoamd.png" alt="AMD" />
+      <!-- barra de Navegacion -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div id="div-logo">
+          <img src="../img/logoamd.png" alt="AMD" />
+        </div>
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./habitaciones.html"
+                  >Habitaciones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./galeria_imagenes.html"
+                  >Galeria</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
           </div>
-  
-          <!-- lista desordenada -->
-          <ul>
-            <!-- lista -->
-  
-            <li>
-              <!--etiqueta ancla = enlace relativo -->
-              <a href="../index.html">Inicio</a>
-            </li>
-  
-            <li>
-              <!-- ./ para ir a buscar una carpeta y acceder a su archivo -->
-              <a href="./servicios.html">Servicios</a>
-            </li>
-  
-            <li>
-              <a href="./habitaciones.html">Habitaciones</a>
-            </li>
-  
-            <li>
-              <a href="./galeria_imagenes.html">Galeria</a>
-            </li>
-  
-            <li>
-              <a href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div id="titulos">
-          <h1>Complejo Turistico LA GRANJA</h1>
-          <h2>Habitaciones</h2>
         </div>
+      </nav>
 
+      <div id="titulos">
+        <h1>Complejo Turistico LA GRANJA</h1>
+        <h2>Habitaciones</h2>
+      </div>
+    </header>
 
-      </header>
+    <footer>
+      <div class="footer-info">
+        <h3>Asociacion Mutualista del Docente de la Provincia de Cordoba</h3>
+        <h4>Independencia 340 - Cordoba tel. 4216585</h4>
+        <h4>info@amdcba.org.ar</h4>
+      </div>
 
+      <div class="footer-img">
+        <a
+          title="Facebook"
+          href="https://www.facebook.com/Asociaci%C3%B3n-Mutualista-del-Docente-de-la-Provincia-de-C%C3%B3rdoba-500883979933164/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-facebook-square"></i>
+        </a>
 
-      <footer>
-        <div class="footer-info">
-          <h3>Asociacion Mutualista del Docente de la Provincia de Cordoba</h3>
-          <h4>Independencia 340 - Cordoba tel. 4216585</h4>
-          <h4>info@amdcba.org.ar</h4>
-        </div>
-  
-        <div class="footer-img">
-          <a
-            title="Facebook"
-            href="https://www.facebook.com/Asociaci%C3%B3n-Mutualista-del-Docente-de-la-Provincia-de-C%C3%B3rdoba-500883979933164/"
-            target="_blank"
-          >
-            <i class="fa-brands fa-facebook-square"></i>
-          </a>
-  
-          <a
-            title="Instagram"
-            href="https://www.instagram.com/mutualdeldocente/"
-            target="_blank"
-          >
-            <i class="fa-brands fa-instagram-square"></i>
-          </a>
-  
-          <a title="Whatsapp" href="https://wa.link/n15ukw" target="_blank">
-            <i class="fa-brands fa-whatsapp-square"></i>
-          </a>
-  
-        </div>
-      </footer>
-</body>
+        <a
+          title="Instagram"
+          href="https://www.instagram.com/mutualdeldocente/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-instagram-square"></i>
+        </a>
+
+        <a title="Whatsapp" href="https://wa.link/n15ukw" target="_blank">
+          <i class="fa-brands fa-whatsapp-square"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

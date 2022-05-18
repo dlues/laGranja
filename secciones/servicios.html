@@ -8,43 +8,66 @@
       src="https://kit.fontawesome.com/95dfa79d8d.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="../estilos/estilo.css" />
     <title>LA Granja - Servicios</title>
   </head>
   <body>
     <header>
       <!-- barra de Navegacion -->
-      <nav>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div id="div-logo">
           <img src="../img/logoamd.png" alt="AMD" />
         </div>
 
-        <!-- lista desordenada -->
-        <ul>
-          <!-- lista -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-          <li>
-            <!--etiqueta ancla = enlace relativo -->
-            <a href="../index.html">Inicio</a>
-          </li>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./habitaciones.html"
+                  >Habitaciones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./galeria_imagenes.html"
+                  >Galeria</a
+                >
+              </li>
 
-          <li>
-            <!-- ./ para ir a buscar una carpeta y acceder a su archivo -->
-            <a href="./servicios.html">Servicios</a>
-          </li>
-
-          <li>
-            <a href="./habitaciones.html">Habitaciones</a>
-          </li>
-
-          <li>
-            <a href="./galeria_imagenes.html">Galeria</a>
-          </li>
-
-          <li>
-            <a href="./contacto.html">Contacto</a>
-          </li>
-        </ul>
+              <li class="nav-item">
+                <a class="nav-link active" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
 
       <div id="titulos">
@@ -90,7 +113,7 @@
       <div class="blogIzq">
         <img src="../img/hosteria.JPG" alt="Hosteria" />
         <div id="sec-hosteria">
-          <h2>Hostería</h2>
+          <h3>Hostería</h3>
           <h3>Como estar en el placer de tu Hogar</h3>
           <p>
             Nuestra hosteria posee 21 habitacion pensando en el relax de
@@ -103,7 +126,7 @@
       <div class="blog">
         <img src="../img/camping.jpg" alt="Camping" />
         <div id="sec-camping">
-          <h2>Camping</h2>
+          <h3>Camping</h3>
           <h3>Con la naturaleza al alcance de sus manos</h3>
           <p>
             Un predio con 90 parcelas para poder acampar equipado con los
@@ -117,26 +140,26 @@
       <div class="blogIzq">
         <img src="../img/parque.jpg" alt="Parque" />
         <div>
-          <h2 id="sec-parque">Parque</h2>
+          <h3 id="sec-parque">Parque</h3>
           <h3>La Naturaleza a tu Lado</h3>
           <p>
             El predio posee una superficie total de 8 hectareas, en ella hay
-            mucho parque libre para jugar, caminar, correr o
-            simplemnete disfrutar del aire libre. Con grandes
-            arboledas y vegetacion autoctona nos conecta con la Naturaleza en forma directa.
+            mucho parque libre para jugar, caminar, correr o simplemnete
+            disfrutar del aire libre. Con grandes arboledas y vegetacion
+            autoctona nos conecta con la Naturaleza en forma directa.
           </p>
         </div>
       </div>
       <div class="blog">
         <img src="../img/quinchos.jpg" alt="Quinchos" />
         <div>
-          <h2 id="sec-quinchos">Quinchos</h2>
+          <h3 id="sec-quinchos">Quinchos</h3>
           <h3>Un lugar bajo techo para compartir</h3>
           <p>
-            en el predio se encuentran 2 quinchos de grandes dimenciones que
+            En el complejo se encuentran 2 quinchos de grandes dimenciones que
             pueden ser usados cuando estan libres ya que en ocaciones se
             alquilan para eventos especiales. Con asadores grandes, con sillas y
-            mesas para que la familao un grupo pueda disfrutar en aquelllos dias
+            mesas para que la famila o un grupo pueda disfrutar en aquelllos dias
             que el tiempo no acompaña.
           </p>
         </div>
@@ -144,10 +167,10 @@
       <div class="blogIzq">
         <img src="../img/restaurant.jpg" alt="Restaurant" />
         <div>
-          <h2 id="sec-restaurant">Restaurant</h2>
+          <h3 id="sec-restaurant">Restaurant</h3>
           <h3>El Sabor de la Comida Casera</h3>
           <p>
-            En el predio se encuentra un restaurant que permite que nuestros
+            Existe un restaurant que permite que nuestros
             pasajeros al momento de contratar la estadia puedan elegir entre
             media Pesion, Pension Completa o disfrutar de un buen almuerzo, cena
             o talvez de una merienda.
@@ -185,5 +208,12 @@
         </a>
       </div>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -6,55 +6,22 @@
 body {
   background-color: antiquewhite;
 }
-nav ul {
-  display: flex;
-}
 
-nav ul li {
-  list-style-type: none;
+nav ul li a:hover {
+  color: rgb(38, 2, 241);
+  background: rgb(250, 6, 6);
+  transition: all 1.2s ease-in-out;
 }
-
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  padding: 1.5rem;
-  font-weight: bold;
-  transition: all 0.5s ease;
-}
-
-nav {
-  display: grid;
-  grid-template-columns: 6fr 6fr;
-  align-items: center;
-  width: auto;
-  margin: auto;
-  background-color: deepskyblue;
-  overflow: hidden;
-  padding: 10px;
-}
-
 
 #div-logo img {
-
   width: 260px;
   height: auto;
-
 }
 
-
-#div-logo img:hover 
-{
-  transform: rotateY(360deg) scale(1.2);;
+#div-logo img:hover {
+  transform: rotateY(360deg) scale(1.2);
   transform-style: preserve-3d;
-  transition:all 3s ease-in-out;
-
-
-}
-    
-nav ul li a:hover {
-  color: #000;
-  background: #fff;
-  transition:all 1.2s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 #titulos {
@@ -109,10 +76,9 @@ footer h3 {
   grid-area: pie;
 }
 
-
-
 #form-contacto {
-  text-align: center;
+  text-align: left;
+  margin-left: 30px;
 }
 
 .blogContainer {
@@ -149,7 +115,7 @@ footer h3 {
   padding: 10px;
 }
 
-.blog div h3 h2{
+.blog div h3 h2 {
   padding: 10px;
 }
 
@@ -158,18 +124,14 @@ footer h3 {
   padding: 10px;
   align-items: center;
   text-align: center;
-
-
 }
-.blog-mensecc a{
+.blog-mensecc a {
   text-decoration: none;
   color: black;
   background: yellow;
 }
 
-
 .blog-mensecc a:hover {
-
   color: rgb(248, 7, 7);
   background: #fff;
 }
@@ -183,63 +145,47 @@ i:hover {
   color: red;
 }
 
-
-
-
-  h2 {
-    animation: bounce 10s alternate infinite ease-in-out;
-      @keyframes bounce {
-        0% {
-          transform: translateY(-10%);
-        }
-        10% {
-          transform: translateY(0);
-        }
-      
-      }
-      
-    
-    }
+h2 {
+  animation: bounce 10s alternate infinite ease-in-out;
   @keyframes bounce {
     0% {
-      transform: translateX(10%);
+      transform: translateY(-10%);
     }
-    30% {
-      transform: translateX(-10%);
+    10% {
+      transform: translateY(0);
     }
-  
-  
-
+  }
 }
-
-
-
-
-
-
+@keyframes bounce {
+  0% {
+    transform: translateX(10%);
+  }
+  30% {
+    transform: translateX(-10%);
+  }
+}
 
 @media (max-width: 1050px) {
   .parrafodestacado {
     padding: 20px;
   }
+  p {
+
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 800px) {
-  nav {
-    grid-template-columns: 6fr;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
   #div-logo {
     text-align: center;
+
+
+
+ }
+  #sec-hosteria {
+    padding: 0px;
   }
 
-
- 
-    
   .principal {
     grid-template-areas:
       "encabe2"
@@ -257,18 +203,20 @@ i:hover {
   }
 
   nav ul li a {
-    padding: 0.2rem;
-  }
-  nav ul li {
-    text-align: center;
+    padding: 0rem;
   }
 
-.blog, .blogIzq {
-flex-direction: column;
-}
+  .blog,
+  .blogIzq {
+    flex-direction: column;
+  }
 
-.blog-mensecc {
-  flex-direction: column;
+  .blog-mensecc {
+    flex-direction: column;
+  }
 
-}
+  p {
+
+    font-size: 14px;
+  }
 }
