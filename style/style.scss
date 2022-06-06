@@ -1,5 +1,4 @@
-@import './imports/_variables';
-
+@import "./imports/_variables";
 
 * {
   padding: 0;
@@ -11,7 +10,6 @@ body {
 }
 
 nav ul li a:hover {
-
   background: rgb(250, 6, 6);
   transition: all 1.2s ease-in-out;
 }
@@ -51,17 +49,31 @@ nav ul li a:hover {
   grid-area: encabe3;
 }
 
-p {
-  padding: 20px;
-  font-size: 24px;
-}
-.parrafodestacado {
+.parrafocomun {
   padding: 100px;
   display: flex;
   grid-area: contenido3;
   justify-content: center;
+}
+
+.parrafodestacado {
+  @extend .parrafocomun;
   align-items: center;
   text-align: center;
+}
+
+@mixin parrafo_des($color, $size) {
+  color: $color;
+  font-size: $size;
+}
+
+.parrafo_galeria {
+  @include parrafo_des(red, 30px);
+}
+
+p {
+  padding: 20px;
+  font-size: 24px;
 }
 
 .div-imagen1 {
@@ -74,7 +86,6 @@ footer {
   justify-content: space-between;
   padding: 16px;
   background-color: $color-footer;
-
 }
 
 footer h3 {
@@ -92,8 +103,6 @@ footer h3 {
   align-items: center;
   background-color: $base-color;
 }
-
-
 
 .work {
   font-size: 2rem;
@@ -160,7 +169,6 @@ i {
   padding: 0 5px;
 }
 
-
 i:hover {
   color: red;
 }
@@ -182,6 +190,18 @@ h2 {
   }
   30% {
     transform: translateX(-10%);
+  }
+}
+
+$secciones: (
+  video: red,
+  foto: green,
+  multimedia: Blue,
+);
+
+@each $seccion, $bcolor in $secciones {
+  .sec--#{$seccion} {
+    background-color: $bcolor;
   }
 }
 
@@ -219,7 +239,6 @@ h2 {
   }
 
   nav {
-
     ul {
       li {
         a {

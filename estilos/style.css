@@ -53,12 +53,7 @@ nav ul li a:hover {
   grid-area: encabe3;
 }
 
-p {
-  padding: 20px;
-  font-size: 24px;
-}
-
-.parrafodestacado {
+.parrafocomun, .parrafodestacado {
   padding: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,10 +65,23 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.parrafodestacado {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.parrafo_galeria {
+  color: red;
+  font-size: 30px;
+}
+
+p {
+  padding: 20px;
+  font-size: 24px;
 }
 
 .div-imagen1 {
@@ -228,6 +236,18 @@ h2 {
     -webkit-transform: translateX(-10%);
             transform: translateX(-10%);
   }
+}
+
+.sec--video {
+  background-color: red;
+}
+
+.sec--foto {
+  background-color: green;
+}
+
+.sec--multimedia {
+  background-color: Blue;
 }
 
 @media (max-width: 1050px) {

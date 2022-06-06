@@ -1,0 +1,18 @@
+Cambios realizados
+
+Title : Se mejora el titulo que aperece en la brra de navegacion, ya estaba de antes pero se completo
+
+Se agregan Etiquetas META
+
+Meta description : Tratando de no ser muy extensivo se agrega descripcion de la informacion que posee la pagina
+Meta KW : Haciendo una enumeracion de posibles palabras de busqueda que puedan direccionar cada una de las paginas html del proyecto
+
+
+SASS
+
+Mixing : se agrega sentencia mixing trabajando con el color y el tamaño del font de la pagina galeria_imagenes.html
+
+Extend : se reescribe una clase para poder usar la opcion Extend. Clases involucradas parrafocomun y parrafodestacado.
+
+Mapa : En la Html galeria_imagenes.html se defines 3 botones que corresponden a secciones de la pagina dividiendo video, foto y multimedia. 
+Para asignarle un color de fondo a cada uno de ellos utilizo un mapa y el each correspondiente.
