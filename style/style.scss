@@ -10,7 +10,7 @@ body {
 }
 
 nav ul li a:hover {
-  background: rgb(250, 6, 6);
+  background: brown;
   transition: all 1.2s ease-in-out;
 }
 
@@ -20,7 +20,7 @@ nav ul li a:hover {
 }
 
 #div-logo img:hover {
-  transform: rotateY(360deg) scale(1.2);
+  transform: rotateY(360deg) scale(1);
   transform-style: preserve-3d;
   transition: all 3s ease-in-out;
 }
@@ -91,6 +91,11 @@ footer {
 footer h3 {
   grid-area: pie;
 }
+
+.footer-info {
+  color: white;
+}
+
 
 #form-contacto {
   text-align: left;
@@ -205,6 +210,10 @@ $secciones: (
   }
 }
 
+
+.sombra {
+  box-shadow: 2px 2px 5px #999;
+}
 @media (max-width: 1050px) {
   .parrafodestacado {
     padding: 20px;
